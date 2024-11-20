@@ -1,0 +1,60 @@
+/* Reset all default margins, paddings, and borders */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove list styles on ul and ol */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default quotes on blockquote and q */
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+}
+
+/* Set a consistent line height */
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Remove border and padding from tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset images and media to avoid layout issues */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure consistent button appearance */
+button, input, select, textarea {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+/* Remove default anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Set defaults for HTML5 semantic elements */
+article, aside, footer, header, nav, section, main {
+    display: block;
+}
